@@ -6,8 +6,13 @@
       <template>
         <nuxt-link to="/users">用户列表</nuxt-link>
         <el-button @click="$router.push('/users')">用户列表</el-button>
-        <el-button @click="$router.push({ name: 'users-detail' })"
-          >用户详情</el-button
+        <el-button
+          @click="$router.push({ name: 'users-detail', query: { id: 1 } })"
+          >用户列表id</el-button
+        >
+        <el-button
+          @click="$router.push({ name: 'users-id', params: { id: 2 } })"
+          >用户详情id</el-button
         >
       </template>
       <h1 class="title">

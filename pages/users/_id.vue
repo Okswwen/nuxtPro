@@ -1,5 +1,5 @@
 <template>
-  <div class="container">用户详情页 {{ $router.query.id }}</div>
+  <div class="container">用户：{{ $router.params.id }}</div>
 </template>
 
 <script>
